@@ -1,4 +1,5 @@
 # Sistema Web com Login, criação de Sala, criação de perguntas e respostas e exclusão.
+Aprendendo isso através da plataforma da Rocketseat!
 
 # 📷 Telas
 
