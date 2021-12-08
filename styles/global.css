@@ -51,5 +51,49 @@ body, button, input, textarea{
   clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;;
+}
 
+/*input e botao*/
+input, button, .button{
+  border-radius: .8rem;
+  height: 5rem;
+}
+
+button, .button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  color: var(--white);
+  transition: filter .2s;
+}
+
+button:hover, .button:hover{
+  filter: brightness(1.2);
+}
+
+button > img
+.button > img{
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+  background: var(--white);
+  color: var(--blue);
+  border: .2rem solid var(--blue);
+}
+
+.content header{
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img{
+  width: 16.7rem;
 }
