@@ -14,6 +14,7 @@ header{
 #bg{
   grid-area: left;
   background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+  background-position: -10rem;
 }
 
 main{
@@ -24,8 +25,7 @@ main{
 }
 
 main .container{
-  width: min(36.3rem 100%);
-
+  width: min(36.3rem, 100%);
 }
 
 main h2{
@@ -44,4 +44,50 @@ input, button, .button{
   width: 100%;
   margin-bottom: 1.8rem;
   
+}
+
+/* Separetor line */
+.separator{
+  display: flex;
+  align-items: center;
+
+  margin: 4rem 0;
+}
+
+.separator div:nth-child(2){
+  color: var(--grey-blue);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 0 1.35rem;
+  line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+  background-color: var(--grey-blue);
+  width: 100%;
+  height: 1px;
+}
+
+/* create bals*/
+.ball{
+  width: 21.2rem;
+  height: 21.2rem;
+  background: var(--blue);
+  opacity: 0.1;
+
+  clip-path: circle();
+  position: fixed;
+}
+
+.ball.top{
+  top: -46rem;
+  width: 63.3rem;
+  right: -35rem;
+  height: 63.3rem;
+}
+
+.ball.bottom{
+  top: 0;
+  bottom: 0;
 }
